@@ -8,7 +8,6 @@ BOT_TOKEN = os.getenv("BOT_TOKEN")
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher(bot)
 
-# Меню
 menu = ReplyKeyboardMarkup(resize_keyboard=True)
 menu.add(KeyboardButton("🌿 О Ибоге"))
 menu.add(KeyboardButton("🌀 Как проходит церемония"))
@@ -18,7 +17,6 @@ menu.add(KeyboardButton("❓ Частые вопросы"))
 menu.add(KeyboardButton("📞 Контакт"))
 menu.add(KeyboardButton("📸 Instagram"))
 
-# Инлайн-кнопка Instagram
 instagram_btn = InlineKeyboardMarkup().add(
     InlineKeyboardButton("📸 Перейти в Instagram", url="https://instagram.com/vale_winds_magic")
 )
